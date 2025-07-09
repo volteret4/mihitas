@@ -1,5 +1,5 @@
 +++
-title = "Enable_or_disable_automatic_login_in_debian_"
+title = "Automatic login in Linux"
 date = "2025-07-09"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
 author = "volteret4"
