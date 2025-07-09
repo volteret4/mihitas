@@ -7,7 +7,7 @@ cover = ""
 tags = ["tags:"]
 keywords = ["tags:"]
 description = "Añadir ruta a path"
-showFullContent = false
+showFullContent = true
 readingTime = true
 hideComments = false
 +++
@@ -16,3 +16,4 @@ Añadir `~/local/bin` al path
 
 ```bash
 export PATH="/home/$USER/.local/bin:$PATH"
+```

@@ -13,7 +13,7 @@ hideComments = false
 draft = false
 +++
 
-> <a href="https://linux.how2shout.com/enable-or-disable-automatic-login-in-debian-11-bullseye/" class="tc-tiddlylink-external" rel="noopener noreferrer" target="_blank">https://linux.how2shout.com/enable-or-disable-automatic-login-in-debian-11-bullseye/</a>
+> [ORIGEN](https://linux.how2shout.com/enable-or-disable-automatic-login-in-debian-11-bullseye/)
 
 `sudo nano /etc/lightdm/lightdm.conf`
 

@@ -7,11 +7,10 @@ cover = ""
 tags = ["tags: linux: linux: linux: linux:"]
 keywords = ["tags: linux: linux: linux: linux:"]
 description = ""
-showFullContent = false
+showFullContent = true
 readingTime = true
 hideComments = false
 +++
-
 
 ```bash
 sudo pacman -S arcolinux-bootloader-grub-git

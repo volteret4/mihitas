@@ -7,12 +7,13 @@ cover = ""
 tags = ["tags:"]
 keywords = ["tags:"]
 description = "Eliminar clave de un servidor"
-showFullContent = false
+showFullContent = true
 readingTime = true
 hideComments = false
 +++
 
-
 Para eliminar las claves que referencien a dietpi:
+
 ```
    ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R "dietpi"
+```

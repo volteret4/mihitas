@@ -1,5 +1,5 @@
 +++
-title = "Conocer_numero_chmod"
+title = "Conocer numero chmod"
 date = "2025-07-09"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
 author = "volteret4"
@@ -7,7 +7,7 @@ cover = ""
 tags = ["tags:"]
 keywords = ["tags:"]
 description = "Obtener el código numérico de los permisos del achivo"
-showFullContent = false
+showFullContent = true
 readingTime = true
 hideComments = false
 +++

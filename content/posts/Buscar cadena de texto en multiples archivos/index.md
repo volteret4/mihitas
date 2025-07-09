@@ -6,12 +6,10 @@ cover = ""
 tags = [""]
 keywords = [""]
 description = "Buscar texto en los archivos de uan carpeta"
-showFullContent = false
+showFullContent = true
 readingTime = true
 hideComments = false
 +++
-
-
 
 ```sh
 `grep -rHni 'cadena_de_texto' .`
