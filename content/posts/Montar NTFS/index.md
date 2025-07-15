@@ -1,11 +1,11 @@
 +++
-title = "Mount NTFS"
+title = "Montar NTFS"
 date = "2025-07-15"
 author = "volteret4"
 cover = ""
 tags = [""]
 keywords = [""]
-description = ""
+description = "Montar disco NTFS en linux"
 showFullContent = true
 readingTime = true
 hideComments = false
