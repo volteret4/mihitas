@@ -76,22 +76,22 @@ pagination.pagerSize = 5
 [languages]
   [languages.es]
     languageName = "Español"
-    title = "Terminal"
+    title = "mihitas"
 
     [languages.es.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "Notas"
       owner = ""
       keywords = ""
       copyright = ""
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
-      newerPosts = "Newer posts"
-      olderPosts = "Older posts"
-      missingContentMessage = "Page not found..."
-      missingBackButtonLabel = "Back to home page"
+      menuMore = "Muestra todo"
+      readMore = "Seguir leyendo"
+      readOtherPosts = "Lee otros posts"
+      newerPosts = "posts nuevos"
+      olderPosts = "posts viejos"
+      missingContentMessage = "Si funciona, no lo toques"
+      missingBackButtonLabel = "Volver al inicio... o no"
       minuteReadingTime = "min read"
-      words = "words"
+      words = "palabras"
 
       [languages.es.params.logo]
         logoText = "Terminal"
