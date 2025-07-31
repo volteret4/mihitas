@@ -3,14 +3,13 @@ title = "Escanear Red Local"
 date = "2025-07-31"
 author = "volteret4"
 cover = ""
-tags = [""]
-keywords = [""]
+tags = ["nmap", "linux", "network"]
+keywords = ["nmap", "linux", "network", "scan", "subnet"]
 description = ""
 showFullContent = true
 readingTime = true
 hideComments = false
 +++
-
 
 > [Origen](https://nosololinux.es/escanear-red-local-con-nmap-en-linux/)
 

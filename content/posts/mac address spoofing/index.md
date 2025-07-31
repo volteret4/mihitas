@@ -3,14 +3,13 @@ title = "Mac Address Spoofing"
 date = "2025-07-09"
 author = "volteret4"
 cover = ""
-tags = [""]
-keywords = [""]
+tags = ["mac", "spoofing", "networking", "linux"]
+keywords = ["mac", "Address", "Spoofing", "Linux"]
 description = "Cambia la MAC en Linux"
 showFullContent = false
 readingTime = true
 hideComments = false
 +++
-
 
 > [Origen](https://wiki.archlinux.org/title/MAC_address_spoofing)
 

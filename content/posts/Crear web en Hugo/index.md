@@ -3,14 +3,13 @@ title = "Crear Web En Hugo"
 date = "2025-07-10"
 author = "volteret4"
 cover = ""
-tags = [""--baseURL""]
-keywords = [""--baseURL""]
+tags = ["hugo", "web"]
+keywords = ["hugo", "web"]
 description = "Crea un blog estático en github con hugo"
 showFullContent = false
 readingTime = true
 hideComments = false
 +++
-
 
 ## 1.Crear El blog
 
@@ -19,10 +18,12 @@ hugo new site <nombre del sitio>
 cd <nombre del sitio>
 git init
 ```
+
 ## 3.Elegir Un tema e instalarlo
 
 <https://themes.gohugo.io/themes/lightbi-hugo/>
-``` bash
+
+```bash
 git submodule add https://github.com/binokochumolvarghese/lightbi-hugo themes/lightbi-hugo
 echo "theme = 'lightbi-hugo'" >> hugo.toml
 hugo server
@@ -44,21 +45,24 @@ git add . # subira todo el contendio de la carpeta en la que se está
 git commit -m "comentario"
 git push
 ```
+
 ## 7.Accede A github y ve a `Settings` > `Pages` hasta ver esto
 
 [1;33mImagen no encontrada: /mnt/windows/FTP/wiki/Obsidian/Dibujos/img/Pasted image 20240723144203.png[0m
+
 <!-- Imagen no encontrada: Pasted image 20240723144203.png -->
 
 ## 8.Cambia `source` A `Github Actions` (se guarda solo)
 
 [1;33mImagen no encontrada: /mnt/windows/FTP/wiki/Obsidian/Dibujos/img/Pasted image 20240723144218.png[0m
+
 <!-- Imagen no encontrada: Pasted image 20240723144218.png -->
 
 ## 9.Crea Un archivo en `.github/workflows/hugo.yaml`
 
 ### ¡Importante! Cambiar la versión de hugo a la que esté instalada
 
-``` yaml
+```yaml
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
@@ -98,7 +102,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
@@ -120,7 +124,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -141,7 +145,7 @@ jobs:
 
 ## 10.Crear Un commit en el repositorio y subirlo
 
-``` bash
+```bash
 git add . # subira todo el contendio de la carpeta en la que se está
 git commit -m "comentario"
 git push
@@ -150,10 +154,12 @@ git push
 ## 11.En Github, elije `Actions`
 
 [1;33mImagen no encontrada: /mnt/windows/FTP/wiki/Obsidian/Dibujos/img/Pasted image 20240723144801.png[0m
+
 <!-- Imagen no encontrada: Pasted image 20240723144801.png -->
 
 Una vez terminado el push y la creación del sitio debes ver algo así
 [1;33mImagen no encontrada: /mnt/windows/FTP/wiki/Obsidian/Dibujos/img/Pasted image 20240723144903.png[0m
+
 <!-- Imagen no encontrada: Pasted image 20240723144903.png -->
 
 Se veria asi en el commit

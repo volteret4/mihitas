@@ -3,19 +3,18 @@ title = "Formatear Disco"
 date = "2025-07-15"
 author = "volteret4"
 cover = ""
-tags = [""]
-keywords = [""]
+tags = ["formatear", "disco"]
+keywords = ["formatear", "disco", "linux", "format"]
 description = ""
 showFullContent = false
 readingTime = true
 hideComments = false
 +++
 
-
 ## Formatear disco
 
-``` bash
-# Crear nueva tabla de particiones 
+```bash
+# Crear nueva tabla de particiones
 sudo fdisk /dev/sdXY
 	# Orden: g, n, w
 
