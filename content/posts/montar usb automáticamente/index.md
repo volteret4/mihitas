@@ -9,6 +9,8 @@ description = "Copia este script para montar automáticamente una unidad especí
 showFullContent = false
 readingTime = true
 hideComments = false
+Toc = true
+TocTitle = "Índice"
 +++
 
 ## 1. Editar regla:
