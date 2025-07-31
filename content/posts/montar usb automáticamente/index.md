@@ -5,7 +5,7 @@ author = "volteret4"
 cover = ""
 tags = ["linux", "usb", "automount", "mount"]
 keywords = ["linux", "usb", "automount", "mount"]
-description = ""
+description = "Copia este script para montar automáticamente una unidad específica en el sistema"
 showFullContent = false
 readingTime = true
 hideComments = false
@@ -15,9 +15,13 @@ hideComments = false
 
 `sudo nano /etc/udev/rules.d/99-usb-mount.rules`
 
+Añade el siguiente contenido:
+
 `ACTION=="add", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", ENV{ID_BUS}=="usb", TAG+="systemd", ENV{SYSTEMD_WANTS}="usb-mount@%k.service"`
 
 ## 2. Crear Servicio
+
+Si usas systemd, crea un servicio systemd que monte la unidad cuando se conecte.
 
 `sudo nano /etc/systemd/system/usb-mount@.service`
 
