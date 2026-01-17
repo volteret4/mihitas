@@ -1,28 +1,27 @@
 +++
 title = "Demasiados Intentos De Conexión Ssh"
-date = "2025-07-31"
+date = "2026-01-17"
 author = "volteret4"
 cover = ""
-tags = ["linux", "ssh", "fail", "error"]
-keywords = ["linux", "ssh", "fail", "error"]
-description = "Corrige tu conexión ssh"
+tags = ["ssh"]
+keywords = ["ssh"]
+description = ""
 showFullContent = false
 readingTime = true
 hideComments = false
 +++
 
+
 [source](https://stackoverflow.com/questions/59429697/ssh-too-many-authentication-failures-error-when-trying-to-connect-to-raspberry)
 
-The `known_host` file isn't related to your problem.
-It's seems to be the problem, that your agent knows too many keys.
 
-You can try it with
+Si tienes demasiadas llaves en el agente ssh, se prueban todas con el servidor, y se puede alcanzar el limit antes de acertar la correcta, pudiendo evitarlo asi:
 
 ```bash
 ssh -o IdentityAgent=none -i private_key_file_for_raspberry ...
 ```
 
-You can add this to your config file, too.
+O puedes modificar la configuracion de ssh para ese host editando `~/.ssh/config`
 
 ```bash
 HOST raspi42
@@ -31,3 +30,4 @@ HOST raspi42
    IdentityAgent none
    IdentityFile private_key_file_for_raspberry
 ```
+
