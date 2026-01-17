@@ -1,25 +1,23 @@
 +++
-title = "Montar NTFS"
-date = "2025-07-15"
+title = "Montar Ntfs"
+date = "2026-01-17"
 author = "volteret4"
 cover = ""
-tags = ["ntfs"]
-keywords = ["ntfs", "mount", "linux", "filesystem"]
-description = "Montar disco NTFS en linux"
-showFullContent = true
+tags = ["filesystems"]
+keywords = ["filesystems"]
+description = ""
+showFullContent = false
 readingTime = true
 hideComments = false
 +++
 
-## Instalar
 
+## Instalar
 ```bash
 sudo apt install fuse
 sudo apt install ntfs-3g
 ```
-
 ## Montar
-
 ```bash
 sudo mount -t ntfs /dev/sdXy /path
 ```
